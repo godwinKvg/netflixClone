@@ -19,7 +19,6 @@ export class MovieTypeComponent implements OnDestroy {
 
   trailerUrl: string;
   movies: any;
-  lastTrailerUrl: string;
 
   subscriptions: any[];
   constructor(private moviesService: MoviesService) { }

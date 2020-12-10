@@ -1,4 +1,12 @@
+<<<<<<< HEAD
 ![Page Image](src/assets/netflix.png)
+=======
+
+
+
+![Page Image](https://github.com/hackerman001/netflixClone/blob/main/image.jpg?raw=true)
+
+>>>>>>> 5d395ad7f8cbc01efca642e374ae287e31c2e18a
 
 # NetflixClone
 
