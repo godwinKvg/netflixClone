@@ -1,3 +1,9 @@
+
+
+
+![Page Image](https://github.com/hackerman001/netflixClone/blob/main/image.jpg?raw=true)
+
+
 # NetflixClone
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.0.2.
