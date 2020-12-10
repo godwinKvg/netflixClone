@@ -1,0 +1,16 @@
+.row {
+  width: 100%;
+  border-top: rgba(182, 178, 178, 0.733) solid 8px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+
+}
+
+.row--reverse {
+  flex-direction: row-reverse;
+}
+
+.col {
+  padding: 30px;
+}

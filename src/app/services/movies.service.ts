@@ -8,10 +8,12 @@ import { Observable } from 'rxjs';
 })
 export class MoviesService {
 
+  baseUrl = 'https://api.themoviedb.org/3';
+
   constructor(private http: HttpClient) { }
 
   getMovies(url): Observable<IMovie> {
-    return this.http.get<IMovie>(url)
+    return this.http.get<IMovie>(this.baseUrl + url)
   }
 
 }

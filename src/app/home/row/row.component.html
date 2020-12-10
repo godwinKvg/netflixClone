@@ -1,0 +1,19 @@
+<div class="row" [ngClass]="{ 'row--reverse': reverse }">
+  <div class="col">
+    <h1>Regardez Netflix sur votre TV.</h1>
+    <h3>
+      Regardez Netflix sur votre Smart TV, PlayStation, Xbox, Chromecast, Apple
+      TV, lecteurs Blu-ray et bien plus.
+    </h3>
+  </div>
+  <div class="col">
+    <!-- *ngIf="video" -->
+    <video
+      src="/assets/video-tv-0819.m4v"
+      accesskey="none"
+      autoplay
+    ></video>
+    <!-- *ngIf="image"  -->
+   <!--  <img [src]="'/assets/mobile-0819.jpg'" alt="Image" /> -->
+  </div>
+</div>

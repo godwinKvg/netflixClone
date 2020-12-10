@@ -1,8 +1,16 @@
 <div class="app">
   <app-navbar></app-navbar>
   <app-banner></app-banner>
-  <app-movie-type *ngFor="let request of requests | keyvalue" [title]="request.value.title"
-    [fetchUrl]="request.value.url" [isLargeRow]="request.value.isLargeRow">
+  <app-movie-type
+    [title]="requests.fetchNetflixOriginals.title"
+    [fetchUrl]="requests.fetchNetflixOriginals.url"
+    [isLargeRow]="true"
+  >
   </app-movie-type>
-
+  <app-movie-type
+    *ngFor="let request of requests | keyvalue"
+    [title]="request.value.title"
+    [fetchUrl]="request.value.url"
+  >
+  </app-movie-type>
 </div>

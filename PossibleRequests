@@ -1,0 +1,282 @@
+https: //api.themoviedb.org/3/genre/movie/list?api_key=71ccad229acb2bc651ee8f1475591e77&language=en-US
+
+  {
+    "genres": [{
+      "id": 28,
+      "name": "Action"
+    }, {
+      "id": 12,
+      "name": "Adventure"
+    }, {
+      "id": 16,
+      "name": "Animation"
+    }, {
+      "id": 35,
+      "name": "Comedy"
+    }, {
+      "id": 80,
+      "name": "Crime"
+    }, {
+      "id": 99,
+      "name": "Documentary"
+    }, {
+      "id": 18,
+      "name": "Drama"
+    }, {
+      "id": 10751,
+      "name": "Family"
+    }, {
+      "id": 14,
+      "name": "Fantasy"
+    }, {
+      "id": 36,
+      "name": "History"
+    }, {
+      "id": 27,
+      "name": "Horror"
+    }, {
+      "id": 10402,
+      "name": "Music"
+    }, {
+      "id": 9648,
+      "name": "Mystery"
+    }, {
+      "id": 10749,
+      "name": "Romance"
+    }, {
+      "id": 878,
+      "name": "Science Fiction"
+    }, {
+      "id": 10770,
+      "name": "TV Movie"
+    }, {
+      "id": 53,
+      "name": "Thriller"
+    }, {
+      "id": 10752,
+      "name": "War"
+    }, {
+      "id": 37,
+      "name": "Western"
+    }]
+  }
+
+Query Movie
+  `https://api.themoviedb.org/3/search/movie?query=${movieName}&api_key=71ccad229acb2bc651ee8f1475591e77&language=en-US&page=1&include_adult=false`
+
+{
+  "page": 1,
+  "results": [{
+    "adult": false,
+    "backdrop_path": null,
+    "genre_ids": [99],
+    "id": 319087,
+    "original_language": "en",
+    "original_title": "A Gay Girl in Damascus: The Amina Profile",
+    "overview": "There is no indication that this typical online flirtation between two strangers would turn into a case of shocking international intrigue. For months, Sandra in Montreal and Amina, a Syrian-American, bond romantically and intellectually. Encouraged by Sandra, Amina launches a blog called \"A Gay Girl in Damascus,\" representing a marginalized voice in the Middle East on politics, religion, and sexuality. Rapidly garnering worldwide attention, Amina becomes something of a star blogger. But when Syria enters the Arab uprising of 2011, Sandra receives word that Amina has been kidnapped, and soon the search for Amina becomes a global concern and an even larger mystery to solve.",
+    "popularity": 3.501,
+    "poster_path": "/kYLKxnQ1XQhmvRjREyu7H2iDSOi.jpg",
+    "release_date": "2015-01-24",
+    "title": "A Gay Girl in Damascus: The Amina Profile",
+    "video": false,
+    "vote_average": 6,
+    "vote_count": 8
+  }, {
+    "adult": false,
+    "backdrop_path": null,
+    "genre_ids": [],
+    "id": 656172,
+    "original_language": "tr",
+    "original_title": "Amina",
+    "overview": "Amina is a 29-year-old Senegalese woman who works as a dress model in a textile company in Istanbul. Leaving her daughter behind, she immigrated to Turkey seven years ago to earn money and to take care of her daughter’s needs. Amina faces many challenges each day as an African woman living in Turkey. She fights these difficulties keeping alive her hopes of going back to her daughter and her country, she also dreams of being a real model one day. As an immigrant, Amina is in two minds-between her realities and her dreams.",
+    "popularity": 0.739,
+    "poster_path": "/yrgvOsjvQCIPnPsX3sjXjyIqE7G.jpg",
+    "release_date": "2019-04-13",
+    "title": "Amina",
+    "video": false,
+    "vote_average": 6.3,
+    "vote_count": 4
+  }, {
+    "adult": false,
+    "backdrop_path": null,
+    "genre_ids": [18],
+    "id": 341223,
+    "original_language": "en",
+    "original_title": "Amina",
+    "overview": "Taiwan's submission for the Academy Award for Best Foreign Language Film in 1957",
+    "popularity": 0.6,
+    "poster_path": null,
+    "release_date": "1957-01-01",
+    "title": "Amina",
+    "video": false,
+    "vote_average": 0,
+    "vote_count": 0
+  }, {
+    "adult": false,
+    "backdrop_path": null,
+    "genre_ids": [],
+    "id": 433601,
+    "original_language": "en",
+    "original_title": "Amina",
+    "overview": "The contestation is on in the kings palace. Okwelu is accused of stealing, an offence that calls for severe punishment. The allegation is still to be substantiated and has been brought to the kings palace for a thorough examination. He is found guilty and judgment rendered: that he be buried alive in the evil forest. Such an untenable and garrulous punishment shifts the lineage of kingship and nurtures the conditions for deep acrimonies.",
+    "popularity": 0.6,
+    "poster_path": null,
+    "release_date": "2008-01-01",
+    "title": "Amina",
+    "video": false,
+    "vote_average": 0,
+    "vote_count": 0
+  }, {
+    "adult": false,
+    "backdrop_path": "/3JxWopte8y5a2fL6GaoD6pc2Lap.jpg",
+    "genre_ids": [10770, 10751],
+    "id": 584075,
+    "original_language": "cs",
+    "original_title": "Pučálkovic Amina",
+    "overview": "",
+    "popularity": 1.096,
+    "poster_path": null,
+    "release_date": "1968-01-01",
+    "title": "Pučálkovic Amina",
+    "video": false,
+    "vote_average": 0,
+    "vote_count": 0
+  }, {
+    "adult": false,
+    "backdrop_path": null,
+    "genre_ids": [],
+    "id": 564274,
+    "original_language": "es",
+    "original_title": "Amina mar",
+    "overview": "",
+    "popularity": 0.6,
+    "poster_path": null,
+    "release_date": "",
+    "title": "Amina mar",
+    "video": false,
+    "vote_average": 0,
+    "vote_count": 0
+  }, {
+    "adult": false,
+    "backdrop_path": null,
+    "genre_ids": [18],
+    "id": 628203,
+    "original_language": "ro",
+    "original_title": "Instanța amînă pronunțarea",
+    "overview": "A judge is tasked to investigate a mining accident.",
+    "popularity": 0.6,
+    "poster_path": "/kAlhZ2geBILvGJq7J0SLm9Ehpz4.jpg",
+    "release_date": "1976-06-07",
+    "title": "The Court Adjourns the Sentencing",
+    "video": false,
+    "vote_average": 1,
+    "vote_count": 1
+  }, {
+    "adult": false,
+    "backdrop_path": null,
+    "genre_ids": [],
+    "id": 688437,
+    "original_language": "en",
+    "original_title": "أمينة",
+    "overview": "The story revolves around a woman who faces a lot of troubles and ambitions, and she lives in chaos, emotional and great life due to the circumstances of her sick son and her daughter who becomes the focus of attention of one of the influential people, so that the struggle begins in her life between the desire to preserve the life of her son, and the happiness of her daughter threatened, through her simple human relations with surrounding characters With her in her village.",
+    "popularity": 0.6,
+    "poster_path": "/uX5maCF505mv3wQigTJZBzXtm0c.jpg",
+    "release_date": "2018-10-06",
+    "title": "Amina",
+    "video": false,
+    "vote_average": 0,
+    "vote_count": 0
+  }, {
+    "adult": false,
+    "backdrop_path": "/h7HuGVyYOF9b6CZJfm9msipxlRU.jpg",
+    "genre_ids": [18, 53],
+    "id": 446029,
+    "original_language": "da",
+    "original_title": "Aminas breve",
+    "overview": "Janus has just left a psychiatric hospital after a suicide attempt. His only reason to live has been letters from his high school friend Amina.  When the letters suddenly stop, Janus is sure that something terrible has happened to her.  To make sure she is alright, he sets out to find her.",
+    "popularity": 0.6,
+    "poster_path": "/a8ZrMhaPN3wXpoed1lrrQEmoQHg.jpg",
+    "release_date": "2017-03-09",
+    "title": "Letters to Amina",
+    "video": false,
+    "vote_average": 5.7,
+    "vote_count": 3
+  }, {
+    "adult": false,
+    "backdrop_path": "/l13jOk2uYTJAGYkUP2lXF2l3Bof.jpg",
+    "genre_ids": [18, 10749],
+    "id": 354967,
+    "original_language": "ml",
+    "original_title": "ആമിന ടെയ് ലേഴ്സ്",
+    "overview": "Amina Tailors is a 1991 Indian Malayalam film, directed by Sajan and produced by Ramakrishnan. The film stars Innocent, Ashokan, Sankaradi and Shubha in lead roles. The film had musical score by Raghu Kumar.",
+    "popularity": 0.6,
+    "poster_path": "/5yWa7aaEQhb0BQPFFhSytz9Zvzz.jpg",
+    "release_date": "1991-01-18",
+    "title": "Amina Tailors",
+    "video": false,
+    "vote_average": 0,
+    "vote_count": 0
+  }, {
+    "adult": false,
+    "backdrop_path": null,
+    "genre_ids": [12],
+    "id": 123115,
+    "original_language": "en",
+    "original_title": "Deserto di fuoco",
+    "overview": "A helicopter crashes in the Sahara Desert. The entire crew are killed - only a small infant miraculously survives. Emir Tafud, who has no children of his own, brings the child up as his successor. When Ben is 25 years old he decides to set off in search of his true parents. In Casablanca he meets French crook Jacquot, who takes him with him to Monte Carlo. They both actually manage to find Ben's mother Christine. She tells Ben that his father was a scientist on a secret mission to Africa. Christine wants Ben to stay in Monte Carlo and take over her firm, but Ben has his heart set on living in Belem with his adored Amina. But now Ben gradually unearths a dreadful secret: Christine's second husband François was responsible for the death of his father, who had discovered valuable minerals in the Sahara. After a bitter struggle, Ben finally succeeds in saving his homeland from Western greed.",
+    "popularity": 1.96,
+    "poster_path": "/kXcBzVEeSSymTtf0D1PNJZdSDcV.jpg",
+    "release_date": "1997-01-01",
+    "title": "Deserto di fuoco",
+    "video": false,
+    "vote_average": 9.5,
+    "vote_count": 2
+  }, {
+    "adult": false,
+    "backdrop_path": "/oxD4NuTTaSrrV5Peh0zqCh0yapU.jpg",
+    "genre_ids": [18],
+    "id": 630601,
+    "original_language": "ak",
+    "original_title": "Azali",
+    "overview": "14-year-old Amina from northern Ghana gets sent away to Burkina Faso by her mother to prevent her marriage to an elderly man. However, fate intervenes in the form of kidnappers who bring her to Accra.  What trials and tribulations await Amina in the slums of Accra?  Will she ever find a way to escape?",
+    "popularity": 0.708,
+    "poster_path": "/r4JMq6yhphoQoLkkVmuJP0jsOuk.jpg",
+    "release_date": "2018-10-18",
+    "title": "Azali",
+    "video": false,
+    "vote_average": 5.5,
+    "vote_count": 2
+  }, {
+    "adult": false,
+    "backdrop_path": null,
+    "genre_ids": [16, 35],
+    "id": 184646,
+    "original_language": "en",
+    "original_title": "Be Kind to 'Aminals'",
+    "overview": "Popeye and Olive can't ignore it when produce vendor Bluto comes by with his terribly overloaded cart, whipping his horse and denying it water. They intervene, and while Bluto fights them off for a while, ultimately prevail.",
+    "popularity": 1.49,
+    "poster_path": "/nAsONu1dMItG7mfz3Dbr0BDzEjY.jpg",
+    "release_date": "1935-02-21",
+    "title": "Be Kind to 'Aminals'",
+    "video": false,
+    "vote_average": 6,
+    "vote_count": 2
+  }, {
+    "adult": false,
+    "backdrop_path": null,
+    "genre_ids": [18],
+    "id": 363138,
+    "original_language": "id",
+    "original_title": "Ummi Aminah",
+    "overview": "Ummi Aminah, a 68 years old ustadzah (the term originally means teacher but in Indonesian urban contexts it often translates to Islamic preacher), has loyal congregation. She has seven children. From her first failed marriage, she has two children: Umar whose wife is Risma. Risma is a typical daughter-in-law, cynical and is not in a good relationship with Ummi’s family. Risma is always worried that Umar’s family will take advantage of their wealth. This often drives Umar over his edge so that he threateans to divorce Risma. Aisyah, the second daughter, is a housewife whose husband is Hasan, a middle level civil servant, with two little children.",
+    "popularity": 0.6,
+    "poster_path": null,
+    "release_date": "2012-01-05",
+    "title": "Ummi Aminah",
+    "video": false,
+    "vote_average": 0,
+    "vote_count": 0
+  }],
+  "total_pages": 1,
+  "total_results": 14
+}

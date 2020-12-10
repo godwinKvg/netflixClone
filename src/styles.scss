@@ -1,4 +1,12 @@
 /* You can add global styles to this file, and also import other style files */
+
+@font-face {
+  font-family: 'MyWebFont';
+  src: url('/assets/NetflixSans_W_Rg.woff2');
+
+}
+
 body {
   margin: 0;
+  font-family: 'MyWebFont';
 }

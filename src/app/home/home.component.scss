@@ -1,0 +1,101 @@
+.rows {
+  background-color: #000;
+  width: 100%;
+  color: white;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.row__one {
+  position: relative;
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  background-image: url('/assets/bg-image.jpg');
+  background-position: center center;
+  background-size: cover;
+  justify-content: center;
+  align-items: center;
+}
+
+.row__logo {
+  z-index: 2;
+  position: absolute;
+  left: 20px;
+  top: 20px;
+  width: 100px;
+}
+
+.row__connexion {
+  z-index: 2;
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  padding: 10px;
+  background-color: #db0510;
+  color: white;
+}
+
+.row__one-text {
+  position: absolute;
+  z-index: 100;
+  padding: 30px;
+}
+
+.row__one-text>h1 {
+  font-size: 3.125rem;
+}
+
+.row__one-text input {
+  width: 300px;
+}
+
+.row__one-text input,
+
+.row__one-text button {
+  padding: 14px;
+  outline: none;
+  border: 1px solid rgba(0, 0, 0, 0.13);
+}
+
+.row__one-text button {
+  cursor: pointer;
+  font-weight: 400;
+  background-color: #db0510;
+  color: white;
+}
+
+.row__one-background--shadow {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 0;
+  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.733), rgba(0, 0, 0, 0.527))
+}
+
+
+.row {
+  width: 100%;
+  border-top: rgba(182, 178, 178, 0.733) solid 8px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+
+}
+
+.row--reverse {
+  flex-direction: row-reverse;
+}
+
+.col {
+  width: 400px;
+  padding: 30px;
+}
+
+.col video {
+  width: 400px;
+}

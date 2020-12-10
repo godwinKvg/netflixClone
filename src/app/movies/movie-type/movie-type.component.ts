@@ -1,6 +1,7 @@
-import { MoviesService } from './../services/movies.service';
+import { MoviesService } from '../../services/movies.service';
 import { Component, Input, OnDestroy } from '@angular/core';
 import * as movieTrailer from 'movie-trailer';
+import { Subscription } from 'rxjs';
 
 let apiLoaded = false;
 
@@ -20,7 +21,9 @@ export class MovieTypeComponent implements OnDestroy {
   trailerUrl: string;
   movies: any;
 
-  subscriptions: any[];
+  subscriptions: Subscription[];
+
+
   constructor(private moviesService: MoviesService) { }
 
   ngOnInit(): void {
@@ -65,7 +68,7 @@ export class MovieTypeComponent implements OnDestroy {
         this.setTrailerUrl(result.split('?v=')[1])
       }
     ).catch(
-      error => console.log('Movie not Found or error Occured', error)
+      error => console.log(`%c${error}, '%cMovie not Found or error Occured`, "background:black ; color: white ;font-size:25px", "color: red; font-size:25px")
     )
   }
 
