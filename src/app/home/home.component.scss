@@ -31,6 +31,7 @@
 }
 
 .row__connexion {
+  display: block;
   z-index: 2;
   position: absolute;
   right: 20px;
@@ -38,6 +39,7 @@
   padding: 10px;
   background-color: #db0510;
   color: white;
+  cursor: pointer;
 }
 
 .row__one-text {
@@ -98,4 +100,143 @@
 
 .col video {
   width: 400px;
+}
+
+.scrollDown {
+  width: 40px;
+  position: absolute;
+  z-index: 10;
+  bottom: 0;
+  transform: translateY(-40px);
+
+  animation: upAndDown 1s infinite;
+}
+
+h3 {
+  font-weight: normal;
+}
+
+.fade {
+  color: rgb(56, 253, 56);
+  font-size: 2em;
+  animation: fade 2s infinite;
+}
+
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+
+}
+
+@keyframes upAndDown {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
+
+
+
+
+
+
+
+
+/* Table 3 */
+#tab-2-content .tab-2-content-bottom {
+  margin-top: 2rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 2rem;
+  text-align: center;
+}
+
+.table {
+  width: 100%;
+  margin-top: 2rem;
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.table thead th {
+  text-transform: uppercase;
+  padding: 0.8rem;
+}
+
+.table tbody {
+  display: table-row-group;
+  vertical-align: middle;
+  border-color: inherit;
+}
+
+.table tbody tr td {
+  color: #999;
+  padding: 0.8rem 1.2rem;
+  text-align: center;
+}
+
+.table tbody tr td:first-child {
+  text-align: left;
+}
+
+.table tbody tr:nth-child(odd) {
+  background: #222;
+}
+
+
+
+
+/* Footer */
+ul {
+  list-style: none;
+}
+
+.footer {
+  max-width: 70%;
+  margin: 1rem auto;
+  overflow: auto;
+}
+
+.footer,
+.footer a {
+  color: #999;
+  font-size: 0.9rem;
+}
+
+.footer p {
+  margin-bottom: 1.5rem;
+}
+
+.footer .footer-cols {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 2rem;
+}
+
+.footer li {
+  line-height: 1.9;
+}
+
+.footer .lang-select {
+  margin-top: 2rem;
+  color: #999;
+  background-color: #000;
+  background-image: none;
+  border: 1px solid #333;
+  padding: 1rem 1.2rem;
+  border-radius: 5px;
 }

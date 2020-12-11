@@ -1,20 +1,18 @@
-<header
-  class="banner"
-  [ngStyle]="{ 'background-image': 'url(' + imageUrl + ')' }"
-  style="background-size: cover; background-position: center center"
->
+<header class="banner" [ngStyle]="{ 'background-image': 'url(' + imageUrl + ')' }"
+  style="background-size: cover; background-position: center center">
   <div class="banner__contents">
     <h1 class="banner__title">
       {{ movie?.title || movie?.name || movie?.original_name }}
     </h1>
 
     <div class="banner__buttons">
-      <button class="banner__button">Play</button>
+      <button class="banner__button" (click)="onMovieClicked(movie)">Play</button>
       <button class="banner__button">My List</button>
     </div>
-    <h1 class="banner__description">
+    <h1 *ngIf="movie?.overview" class="banner__description">
       {{ truncateDescription(movie?.overview) || "" }}
     </h1>
   </div>
   <div class="banner--fadeBottom"></div>
 </header>
+<youtube-player *ngIf="trailerUrl" class="row__trailer" [videoId]="trailerUrl" width="100%" autoplay></youtube-player>

@@ -1,6 +1,6 @@
 <div class="row" *ngIf="movies">
   <h2>{{ title }}</h2>
-  <div class="row__posters">
+  <div class="row__posters" #posters>
     <img
       *ngFor="let movie of movies"
       [ngClass]="isLargeRow ? 'row__posterLarge' : 'row__poster'"

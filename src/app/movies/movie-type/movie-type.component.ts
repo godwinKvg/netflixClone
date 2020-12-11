@@ -16,6 +16,7 @@ export class MovieTypeComponent implements OnDestroy {
   @Input() fetchUrl: string;
   @Input() isLargeRow: boolean;
 
+
   baseUrl = 'https://image.tmdb.org/t/p/original/';
 
   trailerUrl: string;
@@ -27,7 +28,7 @@ export class MovieTypeComponent implements OnDestroy {
   constructor(private moviesService: MoviesService) { }
 
   ngOnInit(): void {
-    this.moviesService.getMovies(this.fetchUrl).subscribe(
+    let moviesubscription = this.moviesService.getMovies(this.fetchUrl).subscribe(
       data => {
         this.movies = data.results;
       },
@@ -35,6 +36,10 @@ export class MovieTypeComponent implements OnDestroy {
         this.movies = null;
       }
     )
+
+    this.subscriptions?.push(moviesubscription);
+
+
     if (!apiLoaded) {
       // This code loads the IFrame Player API code asynchronously, according to the instructions at
       // https://developers.google.com/youtube/iframe_api_reference#Getting_Started
@@ -72,8 +77,9 @@ export class MovieTypeComponent implements OnDestroy {
     )
   }
 
+
   ngOnDestroy(): void {
-    this.subscriptions.map(
+    this.subscriptions?.map(
       sub => sub.unsubscribe()
     )
 
